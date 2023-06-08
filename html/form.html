@@ -1,24 +1,36 @@
 <!-- va a enviar datos por querystring -->
-<form action="datos.html">
-    <table>
+<div class="header">Formulario 1</div>
+<div class="container">
+<form action="datos.html" method="post" class="form-group">
+    <table class="table">
         <tr>
-            <td><strong>Nombre y apellido:</strong></td>
-            <td><input name="firstname_lastname" type="text" /></td>
+            <td><strong >Nombre y apellido:</strong></td>
+            <td><input name="firstname_lastname" type="text"  /></td>
         </tr>
         <tr>
             <td><strong>DNI:</strong></td>
-            <td><input name="dni" type="number" /></td>
+            <td><input class="form-control" name="dni" type="number" /></td>
         </tr>
         <tr>
-            <td><strong>comantarios:</strong></td>
-            <td><textarea name="details" ></textarea></td>
+            <td><div class="texto">comantarios:</div></td>
+            <td><textarea class="form-control" name="details" ></textarea></td>
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="Enviar"> </td>
+            <td><button class="btn btn-outline-primary" type="submit"> Enviar</button>  </td>
             <td></td>
+
         </tr>
         
     </table>
     
 </form>
+
+</div>
+<link rel="StyleSheet" href="styles.css" type="text/css">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/>

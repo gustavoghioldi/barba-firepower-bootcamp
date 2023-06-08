@@ -1,0 +1,55 @@
+
+p#coments {
+    color: yellow;
+}
+input.alerta {
+    background-color: brown;
+}
+.texto {
+    color: #379f2b;
+    text-align: right;
+    text-decoration: underline;
+    text-indent: 100px;
+    text-transform:uppercase;
+    letter-spacing:10px;
+    word-spacing:30px;
+
+}
+.alerta {
+    color: blue;
+    letter-spacing: 5px;
+}
+#dni {
+    color: coral;
+}
+.fondo-rojo {
+    background-color: red;
+}
+
+.fondo-verde {
+    background-color: #379f2b;
+}
+
+.header {
+    color: red;
+    text-align: center;
+    letter-spacing: 25px;
+    text-decoration: underline;
+    border-width: 2px;
+    border-style: double;
+    font-size: x-large;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #379f2b;
+  }
+a:visited {
+    text-decoration: none;
+    color: blue;
+  }
+ 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const real_user = "gustavo";
+    const real_password = "123";
+
+    const user = prompt("username: ");
+    const pass = prompt("password: ");
+    
+    if (user == real_user && real_password==pass) { // && que se cumplan las 2 condiciones (y)
+        document.write("eres usuario registrado");
+    } else {
+        if (user == real_user || real_password==pass) { // || cumpole al menos alguna de estas 2 condiciones (or)
+            document.write("el usuario o el password es incorrecto");
+        } else {
+            document.write("son incorrectos los 2 ");
+        }
+    }
+
+</script>
+</html>

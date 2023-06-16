@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+    <script>
+        function contador (num1, num2) {
+            const init = num1;
+            while( num1<=num2) {
+                document.write(num1);
+                document.write("<br>");
+                num1++;
+            }
+            document.write(`terminde contar del ${init} al ${num2}<br>`)
+        }
+        contador(1, 7);
+        
+        function suma (num1, num2) {
+            return num1 + num2;
+        }
+
+        document.write(suma(12, 5));
+
+        function saludar () {
+            alert("HOLA");
+        }
+        //saludar();
+
+        // puedo pasar una funcion como parametro
+        function ejecutarFunction (fun, num1, num2) {
+            fun(num1, num2);
+        }
+        ejecutarFunction(contador, 2, 9);
+        
+    </script>
+</html>

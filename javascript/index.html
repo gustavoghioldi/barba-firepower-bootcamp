@@ -7,28 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="name">
-    <input type="text" id="dni">
-    <button id="demo">Apretame!!!</button>
+    HOLA MUNDO
 </body>
 <script>
-    function myFunction() {
-        const name = document.getElementById("name").value
-        const dni = document.getElementById("dni").value
-        let persona = new Persona(name, dni)
-        alert(persona.getPersona());
-    }
-    
-    document.getElementById("demo").onclick = () => {myFunction()};
-    class Persona {
-        constructor(name, dni) {
-            this.name = name;
-            this.dni = dni;
-        }
-
-        getPersona () {
-            return "La persona es: "+this.name+" y su DNI: "+this.dni;
-        }
-    }
+    let nombre = prompt("dime tu nombre"); //variables
+    const dni = 25724484; //constante
+    alert(`tu nombre es: ${nombre}`); //interpolacion
+    alert("tu nombre es:"+ nombre); //concatenacion
 </script>
 </html>

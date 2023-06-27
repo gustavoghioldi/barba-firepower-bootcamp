@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="realName" readonly>
+    <p id="parName" >NADA</p>
+    <input type="button" onclick="coso()" value="Tocame">
+</body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("realName").value = urlParams.get("nombre")
+    document.getElementById("parName").innerHTML = urlParams.get("nombre")
+    const rn = document.getElementById("realName")
+    rn.addEventListener("click", (ev)=>{
+        console.log("me tocaron!!!")
+    })
+
+    const myFunc = (num1, num2) => {
+        console.log(num1+num2)
+    }
+</script>
+</html>

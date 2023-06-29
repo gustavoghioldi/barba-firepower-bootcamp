@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    class Persona {
+        constructor(name, dni, gener) {
+            this.name = name;
+            this._dni = dni;
+            this._gener = gener;
+        }
+        set dni(newDni) {
+            this._dni = newDni;
+        }
+
+        get dni() {
+            return this._dni;
+        }
+
+        get gener() {
+            return this._gener;
+        }
+
+        set gener(newGener) {
+            console.log("debe ir a otra oficina si quiere cambiar de genero");
+        }
+      
+    }
+
+    const persona1 = new Persona("Gustavo", 25724484, "MALE");
+    const persona2 = new Persona("Paula", 23133221, "FEMALE");
+
+    class Account {
+        constructor (user) {
+            this._user = user;
+            this._amount = 0;
+        }
+
+        get user () {
+            return this._user;
+        }
+
+        getUserName () {
+            return this._user.name;
+        }
+
+        get amount () {
+            return this._amount;
+        }
+
+        increment (amount) {
+            this._amount = this._amount + amount;
+        }
+
+        decrement (amount) {
+            this._amount = this._amount - amount;
+        }
+
+        static sumar (num1, num2) {
+            console.log(`suma ${num1+num2}`);
+        }
+    }
+
+    const account = new Account(persona1);
+
+    
+</script>
+</html>

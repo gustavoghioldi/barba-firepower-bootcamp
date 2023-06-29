@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+   class Vehiculo {
+    constructor (color, speed=0) {
+        this._color = color;
+        this._speed = speed;
+    }
+        get color () {
+            return this._color;
+        }
+
+        set color(newColor) {
+            this._color = newColor;
+        }
+
+        incrementSpeed() {
+            this._speed++;
+        }
+
+        decrementSpeed() {
+            this._speed--;
+        }
+
+        get speed () {
+            return this._speed;
+        }
+
+        get ruedas () {
+            return this._ruedas;
+        }
+   }
+
+   const v = new Vehiculo("gris");
+
+   class Moto extends Vehiculo {
+    constructor(color, speed=0) {
+        super(color, speed);
+        this._ruedas = 2;
+    }
+
+    enUnaRueda () {
+        return "estoy en una rueda";
+    }
+
+   }
+
+   class Auto extends Vehiculo {
+        constructor(color, speed=0) {
+            super(color, speed);
+            this._ruedas = 4;
+        }
+        subirVentanilla() {
+            return "estoy subiendo las ventanillas";
+        }
+   }
+
+   const auto = new Auto("rojo");
+   const moto = new Moto("gris");
+</script>
+</html>

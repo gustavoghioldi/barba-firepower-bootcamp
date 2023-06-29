@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    function testParametrosPorDefault ( name, dni=false) {
+        if (dni === false) {
+            console.log("Debe ingresar un dni")
+        } else {
+            console.log(`Hola: ${name} uds ingreso al sistema`);
+        }
+        
+    }
+    testParametrosPorDefault("GUstavo");
+    testParametrosPorDefault("Gustavo", 25724484);
+
+    function testParametrosRest(...numbers) {
+        for (index in numbers) {
+            console.log(numbers[index]);
+        }
+    }
+
+    testParametrosRest(1, 2, 3, 4, "hola");
+
+    function testPropagador(x, y, z) {
+        console.log(`x: ${x}, y: ${y}, z: ${z}`);
+    }
+
+    const arr = [2, 5, 7];
+    testPropagador(...arr);
+</script>
+</html>

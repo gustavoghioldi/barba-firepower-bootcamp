@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // clase es un molde de un objeto
+
+    class Animal {
+        
+        constructor (name, feets) {
+            this._name = name;
+            this._feets = feets;
+        }
+
+        walk () {
+            console.log("metodo no implemantado");
+        }
+
+        swim () {
+            console.log("metodo no implemantado");
+        }
+
+        fly () {
+            console.log("metodo no implemantado");
+        }
+
+        get name() {
+            console.log(`mi nombre es: ${this._name}`);
+        }
+
+        set name(newName) {
+            console.log(`No quiero q me cambien el nombre`);
+        }
+    }
+    
+    class Fish extends Animal {
+        swim () {
+            console.log("Puedo nadar");
+        }
+    }
+
+    class FlyFish extends Fish  {
+        fly () {
+            console.log("Puedo volar");
+        }
+
+        // esto es algo parecido a la sobre carga de metodo
+        talk(in_water=false) {
+            if (!in_water) {
+                this._piPi();
+            } else {
+                this._bluBlu();
+            }
+        }
+
+        _bluBlu() {
+            console.log("pi pi");
+        }
+
+        _piPi() {
+            console.log("blu blu");
+        }
+        
+    }
+
+    class Bird extends Animal {
+        constructor(name, feets, wing) {
+            super(name, feets);
+            this.wing = wing;
+        }
+
+        fly () {
+            console.log("Puedo volar");
+        }
+
+        walk () {
+            console.log("Puedo Caminar");
+        }
+
+        talk () {
+            console.log("pi pi ");
+        }
+
+
+
+    }
+
+
+    const ani = new FlyFish("Barba", 2);
+    ani.walk();
+    ani.fly();
+    ani.swim();
+
+    class Calculadora {
+        //no mantienen ni modifican el estado de los atributos
+
+        static sumar (num1, num2) {
+            return num1+num2;
+        }
+    }
+    
+    class Persona {
+        constructor(fName, lName) { 
+            this._fName = fName;
+            this._lName = lName;
+        }
+
+        get name () {
+            return `${this._fName} ${this._lName}`;
+        }
+    }
+    // atributos son la variables internas que se llaman internamente con el prefijo this.
+    // metodos son las funcions internas de las clases. 
+
+</script>
+</html>

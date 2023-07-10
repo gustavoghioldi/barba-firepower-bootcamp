@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="number" id="dni">
+    <button onclick="makeHuman()">Enviar</button>
+</body>
+<script>
+class Human {
+    constructor(name, dni) {
+        this._name = name;
+        this._dni = dni;
+    }
+    // sobreescibi el metodo toString que viene por default [Object, object]
+    toString() {
+        return `{"name":"${name}", "dni":${dni}}`
+    } 
+}
+
+function makeHuman() {
+    name = document.getElementById("name").value;
+    dni = document.getElementById("dni").value;
+    localStorage.setItem("name", name);
+    localStorage.setItem("dni", dni);
+    const human = new Human(name, dni);
+    console.log(human);
+    localStorage.setItem("human", human);
+}
+
+
+</script>
+</html>

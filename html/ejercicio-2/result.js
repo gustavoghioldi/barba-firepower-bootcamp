@@ -33,7 +33,8 @@ for (i of urlParams) {
         conocimientos.push(i[1]);
     }
 }
- const age = calulateAge(new Date(urlParams.get("birth")));
+const bithArray  = urlParams.get("birth").split("-")
+const age = calulateAge(new Date(bithArray[0], bithArray[1], bithArray[2] ));
 
 document.getElementById("age").innerHTML = age.toString()
 document.getElementById("know").innerHTML = conocimientos.toString()

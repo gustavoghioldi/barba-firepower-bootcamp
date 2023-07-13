@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>:::Ejericio 1:::</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="card" style="width: 35rem;">
+            <div class="card-body">
+                <form action="result.html" method="get">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Jhon">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="sur_name" name="sur_name" placeholder="Doe">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="name" class="form-label">DNI</label>
+                        <input type="number" class="form-control" id="dni" name="dni">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Nacimineto</label>
+                        <input type="date" class="form-control" id="birth" name="birth" >
+                      </div>
+
+                    
+
+                      <div class="mb-3">
+                        <select class="form-select" name="gener"  aria-label="multiple select example">
+                            <option value="male">Hombre</option>
+                            <option value="female">Mujer</option>
+        
+                          </select>
+                        </div>
+                      
+                      <div class="mb-3">
+                        <select class="form-select" name="conocimientos" multiple aria-label="multiple select example">
+                            <option value="javaScript">javaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="html">html</option>
+                            <option value="css">css</option>
+                          </select>
+                        </div>
+
+                      <!-- bio -->
+                      <div class="mb-3">
+                        <label for="name" class="form-label">bio</label>
+                        <textarea  class="form-control" id="bio" name="bio"></textarea>
+                      </div>
+                      <!-- end bio -->
+                    
+            
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>

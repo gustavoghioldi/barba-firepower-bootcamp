@@ -28,8 +28,8 @@ tup = (1, 2, 3, "hola", None, ) # es recomendable dejar un , al final siempre
 for t in tup:
     print(t)
 
-print(t[0]) # me trae el primer valor 
-print(t[-1]) # me trae el ultimo valor
+print(tup[0]) # me trae el primer valor 
+print(tup[-1]) # me trae el ultimo valor
 
 #### dict # que son dicionarios como los JSON
 #import datetime 

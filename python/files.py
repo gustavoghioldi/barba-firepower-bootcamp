@@ -19,4 +19,3 @@ f.close()
 
 with open ("algo.txt", "w") as f:
     f.write("algo")
-    
